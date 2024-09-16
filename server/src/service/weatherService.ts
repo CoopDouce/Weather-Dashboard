@@ -5,6 +5,7 @@ interface Coordinates {
   lat: number;
   lon: number;
 }
+
 class Weather { 
   city: string;
   date: string;
@@ -33,15 +34,14 @@ class Weather {
   }
 }
 class WeatherService {
-  private baseURL?: string;
-  private apiKey?: string;
   cityName: string;
+  APIKey: string;
 
   constructor() {
-    this.baseURL = process.env.API_BASE_URL || '';
-    this.apiKey = process.env.API_KEY || '';
+    this.APIKey = '0397eea63aa3752f7384e2a8bea014e8l';
     this.cityName = '';
   }
+
   private async fetchLocationData(query: string) {
     try {
       const response = await fetch(
@@ -61,12 +61,12 @@ class WeatherService {
     return { lat, lon };
   }
   private buildGeocodeQuery(): string {
-    return `${this.baseURL}/geo/1.0/direct?q=${this.cityName}&appid=${this.apiKey}`;
+    return `api.openweathermap.org/data/2.5/weather?q=${this.cityName}&appid=${this.APIKey}`;
   }
 
   private buildWeatherQuery(coordinates: Coordinates): string {
     console.info(`lat=${coordinates.lat} and lon=${coordinates.lon}`);
-    return `${this.baseURL}/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&units=imperial&appid=${this.apiKey}`;
+    return `api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&units=imperial&appid=${this.APIKey}`;
 
   }
   private async fetchAndDestructureLocationData() {

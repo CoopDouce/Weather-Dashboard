@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Florida",
+		"id": "927d0fbd-2623-4f94-be7c-015c1542ff8c"
+	},
+	{
+		"name": "San Diego",
+		"id": "bd0d4766-6e20-4433-9f57-c181bedab90e"
+	},
+	{
+		"name": "Atlanta",
+		"id": "1e892287-1fdd-4344-a7c7-f27f4ef0fc27"
+	},
+	{
+		"name": "New York",
+		"id": "739bb7bc-e08d-413f-bcbc-6068f24e34f1"
+	},
+	{
+		"name": "Denver",
+		"id": "a6cc5e39-1c52-4a76-b60d-a71e40074217"
+	},
+	{
+		"name": "San Francisco",
+		"id": "2d78e81a-b94d-41c3-b67d-fa554c076a54"
+	}
+]
