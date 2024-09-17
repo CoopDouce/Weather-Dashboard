@@ -9,10 +9,8 @@ Being prepared is always crutial. Knowing the weather before traveling is the be
 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Technologies Used](#technologies-used)
   - [License](#license)
   - [Deployment](#deployment)
-  - [Questions](#questions)
 
 ## Installation
 
